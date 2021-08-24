@@ -1,0 +1,12 @@
+/*Estructura de css
+selector{ propiedad: valor}
+*/
+
+body {
+  background-color: rgb(199, 116, 255);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
