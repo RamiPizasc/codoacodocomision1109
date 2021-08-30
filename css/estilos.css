@@ -3,7 +3,7 @@ selector{ propiedad: valor}
 */
 
 body {
-  background-color: rgb(199, 116, 255);
+  background-color: rgb(251, 199, 247);
 }
 
 h1,
@@ -16,6 +16,7 @@ header {
   height: 300px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 /* el valor flex end es para que se quede a la derecha
@@ -26,6 +27,7 @@ header h1 {
   padding: 10px;
   width: 300px;
   height: 50px;
+  font-family: "Segoe UI";
 }
 
 nav {
@@ -39,14 +41,18 @@ nav {
 nav ol li {
   background-color: rgb(44, 43, 43);
   display: inline;
-  color: white;
+  color: #fff;
   padding: 15px;
   margin: 0px 10px;
 }
 
 article {
   padding-top: 75px;
-  background: linear-gradient(red, yellow);
+  background: linear-gradient(
+    rgb(205, 240, 234),
+    rgb(249, 249, 249),
+    rgb(246, 198, 234)
+  );
   width: 80%;
   margin-left: 10%;
 }
@@ -54,16 +60,16 @@ article {
 nav ol li a {
   text-decoration: none;
   color: #fff;
+  font-size: 17px;
 }
 
 nav ol li:hover {
-  background-color: blueviolet;
-  color: black;
+  background-color: rgba(44, 43, 43, 0.144);
   box-shadow: 5px 3px 5px black;
-  width: 250 px;
 }
 
 nav ol li a:hover {
   color: black;
+  font-weight: bold;
 }
-/* en box shadow especificas el eje x, el eje y el otro   */
+/* en box shadow especificas en primer lugar la posición de la sombra en eje X, en segundo lugar en el eje Y, y en último lugar indicas el tipo de difuminado. Después aclarás el color  */
