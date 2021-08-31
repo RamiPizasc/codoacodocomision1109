@@ -16,7 +16,10 @@ header {
   height: 300px;
   display: flex;
   justify-content: flex-end;
-  position: relative;
+  position: fixed;
+  width: 80%;
+  top: 0px;
+  margin-left: 10%;
 }
 
 /* el valor flex end es para que se quede a la derecha
@@ -47,13 +50,13 @@ nav ol li {
 }
 
 article {
-  padding-top: 75px;
+  padding-top: 100px;
   background: linear-gradient(
     rgb(205, 240, 234),
     rgb(249, 249, 249),
     rgb(246, 198, 234)
   );
-  width: 80%;
+  width: 80% !important;
   margin-left: 10%;
 }
 
@@ -73,3 +76,36 @@ nav ol li a:hover {
   font-weight: bold;
 }
 /* en box shadow especificas en primer lugar la posición de la sombra en eje X, en segundo lugar en el eje Y, y en último lugar indicas el tipo de difuminado. Después aclarás el color  */
+
+main {
+  /* width: 80%; */
+}
+
+h4 font {
+  color: black !important;
+}
+
+/*jerarquía 
+1) online (por ejemplo, font)
+2) jerarquía style 
+3) fichero
+!important sirve para remarcar y forzar que el elemento tenga el color */
+
+.rojo {
+  background-color: red;
+  width: 25%;
+  height: 300px;
+  color: yellow;
+  font-size: 25px;
+  margin: 5px;
+}
+
+#negro {
+  background-color: black;
+  color: white;
+}
+
+#principal {
+  display: flex;
+  justify-content: center;
+}
