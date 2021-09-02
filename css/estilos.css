@@ -13,7 +13,7 @@ h2 {
 
 header {
   background-image: url("../img/header.jpg");
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -78,7 +78,7 @@ nav ol li a:hover {
 /* en box shadow especificas en primer lugar la posición de la sombra en eje X, en segundo lugar en el eje Y, y en último lugar indicas el tipo de difuminado. Después aclarás el color  */
 
 main {
-  /* width: 80%; */
+  width: 80%;
 }
 
 h4 font {
@@ -90,22 +90,3 @@ h4 font {
 2) jerarquía style 
 3) fichero
 !important sirve para remarcar y forzar que el elemento tenga el color */
-
-.rojo {
-  background-color: red;
-  width: 25%;
-  height: 300px;
-  color: yellow;
-  font-size: 25px;
-  margin: 5px;
-}
-
-#negro {
-  background-color: black;
-  color: white;
-}
-
-#principal {
-  display: flex;
-  justify-content: center;
-}

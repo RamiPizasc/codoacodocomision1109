@@ -1,0 +1,49 @@
+#justify,
+#otra {
+  display: flex;
+  /* justify-content: center; para centrar los hijos  */
+  /* justify-content: flex-end; para alinear los hijos hacia el final de la página, costado derecho */
+  /* justify-content: flex-start; viene por defecto */
+  /* justify-content: space-around; mantiene distancia entre bordes a izquierda y derecha*/
+  /* justify-content: space-between; mantiene distancia entre los div y los coloca a los costados */
+  /* justify-content: space-evenly; mantiene la misma distancia entre los costados y los divs */
+  /* justify-content: space-around; */
+}
+
+.principal {
+  display: flex;
+  flex: wrap;
+}
+
+.primer {
+  /* width: 150px;
+  height: 150px; */
+  width: 25%;
+  background-color: gray;
+  /* float: left; */
+}
+
+.primer::after {
+  content: "Este es después del contenido";
+  color: white;
+  font-size: 25px;
+}
+
+.primer::before {
+  content: "Este es antes del contenido";
+  color: chartreuse;
+  font-size: 40px;
+}
+
+.primer::first-letter {
+  color: darkorchid;
+  font-size: 35px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+li {
+  display: inline;
+}
