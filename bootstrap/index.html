@@ -16,10 +16,12 @@
   </head>
   <body>
     <div class="container">
-      <!--contianer genera márgenes, container-fluid no tiene margenes a los costados-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-verde fixed-top m-t">
+      <!--container genera márgenes, container-fluid no tiene margenes a los costados-->
+      <nav class="navbar navbar-expand-lg navbar-red bg-verde fixed-top">
+        <!--navbar-red es un nombre cualquiera (distinto a navbar-dark) para colocar color negro a las letras-->
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand nav-link" href="#">Navbar</a>
+          <!--agregamos la clase nav-link para que el color de la letra sea negro-->
           <button
             class="navbar-toggler"
             type="button"
@@ -77,7 +79,8 @@
           </div>
         </div>
       </nav>
-      <h1 class="text-center bg-info p-2">Bootstrap</h1>
+      <h1 class="text-center bg-info p-5">Bootstrap</h1>
+      <!--agregaste padding al título para que el nav no lo pise-->
 
       <div class="row">
         <!--filas-->
@@ -137,9 +140,9 @@
             unde, dolorum dolores error molestiae.
           </p>
         </div>
-        <div class="col-12">
+        <div class="col-12 bg-success">
           <!--acá ocupamos todo el espacio de la fila-->
-          <p class="bg-success">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam
             necessitatibus ad eius sunt fugit natus sapiente amet assumenda,
             consectetur nesciunt. Voluptatum deleniti officiis consequuntur
