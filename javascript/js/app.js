@@ -1,4 +1,5 @@
 //   alert("Hola Mundo"); /*ventana emergente*/
+
 console.log("Estamos en la consola");
 let nombre = "Ramiro";
 /*tipo de dato asignado: string. el let ocupa espacio solo cuando se utiliza*/
@@ -50,49 +51,59 @@ let saludar = saludo + nombre;
 
 let elemento = document.getElementById("principal");
 // console.log(elemento);
+
 elemento.innerHTML = "<h1 class='text-center bg-info'>" + saludar + "</h1>";
-document.write("<h1 class='text-center bg-info'>" + nombre + "</h1>");
+document.write(
+  "<div class='container'><div class='row' id='principal'><h1 class='text-center bg-info'>" +
+    saludar +
+    "</h1></div></div>"
+);
 
 document.write(`
-  <div class='container'> <div class="row" id="principal"
-  <h1 class='text-center bg-info'> ${nombre} "</h1>" </div> </div>
+  <div class="container"><div class="row" id="principal">
+  <h1 class='text-center bg-info'> ${saludar}</h1></div></div>
 `);
 
-// let message = prompt(
-//   "Menú \n 1. Papas fritas \n 2. Milanesas con fritas \n 3. Milanesa Napolitana con fritas"
-// );
+/*
+let message = prompt(
+  "Menú \n 1. Papas fritas \n 2. Milanesas con fritas \n 3. Milanesa Napolitana con fritas"
+);
+*/
 
 /*el triple igual compara tipo de dato y valor*/
-
-// if (message === "1") {
-//   elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
-// } else if (message === "2") {
-//   elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas</p>";
-// } else if (message === "3") {
-//   elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana</p>";
-// } else {
-//   elemento.innerHTML = "No es una opción el valor tipeado";
-// }
+/*
+if (message === "1") {
+  elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
+} else if (message === "2") {
+  elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas</p>";
+} else if (message === "3") {
+  elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana</p>";
+} else {
+  elemento.innerHTML = "No es una opción el valor tipeado";
+}
 
 // elemento.innerHTML = message;
 
 // switch (message) {
-//   case "1":
-//     elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
-//     break; /*Deja el switch*/
+  //   case "1":
+  //     elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
+  //     break; 
 
-//   case "2":
-//     elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas</p>";
-//     break;
-//   case "3":
-//     elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana</p>";
-//     break;
-//   default:
-//     elemento.innerHTML = "No es una opción el valor tipeado";
-//     let message = prompt(
-//       "Menú \n 1. Papas fritas \n 2. Milanesas con fritas \n 3. Milanesa Napolitana con fritas"
-//     );
-// }
+//Deja el switch
+
+
+  case "2":
+    elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas</p>";
+    break;
+  case "3":
+    elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana</p>";
+    break;
+  default:
+    elemento.innerHTML = "No es una opción el valor tipeado";
+    let message = prompt(
+      "Menú \n 1. Papas fritas \n 2. Milanesas con fritas \n 3. Milanesa Napolitana con fritas"
+    );
+}
 
 let num = parseInt(prompt("Ingresa el primer número"));
 let num2 = parseInt(prompt("Ingresa el segundo número"));
@@ -100,15 +111,16 @@ let num2 = parseInt(prompt("Ingresa el segundo número"));
 //convertimos el string a número
 
 let result =
-  "<p>El resultado de " +
-  num +
-  " y " +
-  num2 +
-  " " +
-  " es: " +
-  (num + num2) +
-  "</p>";
+"<p>El resultado de " +
+num +
+" y " +
+num2 +
+" " +
+" es: " +
+(num + num2) +
+"</p>";
 
 //colocamos el ( ) para que se efectúe la suma de números
 elemento.innerHTML = result;
 elemento.innerHTML += "Hola";
+*/
