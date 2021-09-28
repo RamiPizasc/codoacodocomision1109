@@ -17,15 +17,18 @@ console.log(5 > 3); /*imprime true*/
 if (5 > 3) {
   console.log("Es correcto");
 }
-/*cuando usamos condicionales se valida esa condición que está entre (). si es verdadera, se ejecuta la instrucción de abajo*/
+/*cuando usamos condicionales se valida esa condición que está entre (). 
+si es verdadera, se ejecuta la instrucción de abajo
+si es falsa, se ejecuta el else*/
+
 if (5 > 8) {
   console.log("Es correcto");
 } else {
   console.log("No es correcto");
 }
-/*si es falsa, se ejecuta el else*/
 console.log(5 > 3 ? "Es correcto" : "No es correcto");
-/*operador ternario ? y :*/
+
+/*operadores ternarios ? y :*/
 if (hayClases == true) {
   console.log("Me conecto a la videollamada");
 } else {
@@ -65,13 +68,15 @@ document.write(`
 `);
 
 /*
+//almacenamos el mensaje que ingresamos en el prompt para poder usarlo como argumento de las validaciones
+
 let message = prompt(
   "Menú \n 1. Papas fritas \n 2. Milanesas con fritas \n 3. Milanesa Napolitana con fritas"
 );
-*/
 
-/*el triple igual compara tipo de dato y valor*/
-/*
+
+el triple igual compara tipo de dato y valor
+
 if (message === "1") {
   elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
 } else if (message === "2") {
@@ -82,22 +87,24 @@ if (message === "1") {
   elemento.innerHTML = "No es una opción el valor tipeado";
 }
 
+//imprimimos el valor ingresado por usuario en la vista html
 // elemento.innerHTML = message;
 
-// switch (message) {
-  //   case "1":
-  //     elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
-  //     break; 
+ switch (message) {
+     case "1":
+       elemento.innerHTML = "<p>Disfruta de tus Papas</p>";
+       break; 
 
-//Deja el switch
-
+//el break corta el flujo del switch
 
   case "2":
     elemento.innerHTML = "<p>Disfruta de tu Milanesa con fritas</p>";
     break;
+
   case "3":
     elemento.innerHTML = "<p>Disfruta de tu Milanesa Napolitana</p>";
     break;
+
   default:
     elemento.innerHTML = "No es una opción el valor tipeado";
     let message = prompt(
@@ -108,7 +115,8 @@ if (message === "1") {
 let num = parseInt(prompt("Ingresa el primer número"));
 let num2 = parseInt(prompt("Ingresa el segundo número"));
 
-//convertimos el string a número
+//acá almacenamos el valor del prompt en variables let. 
+//con el parseInetconvertimos el string a número
 
 let result =
 "<p>El resultado de " +
@@ -120,7 +128,7 @@ num2 +
 (num + num2) +
 "</p>";
 
-//colocamos el ( ) para que se efectúe la suma de números
+//colocamos los ( ) para que se efectúe la suma de números
 elemento.innerHTML = result;
 elemento.innerHTML += "Hola";
 */
