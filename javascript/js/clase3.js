@@ -4,7 +4,7 @@ let miDiv = document.getElementById("principal");
 
 let btn = document.getElementById("btn");
 btn.addEventListener("click", sumar);
-//sumar acá es el callback para que se ejecute la función sumar
+//este eventListener tiene parámetros: el evento click y sumar. Sumar acá es el callback para que se ejecute la función sumar
 
 function sumar() {
   let num = Number(prompt("Ingresa tu primer número!"));
