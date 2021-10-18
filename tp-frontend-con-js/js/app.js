@@ -8,7 +8,7 @@ const comprarTicket = () => {
                 <div class="card group">
                     <div class="card">
                         <div class="card-body border border-primary mr-1">
-                            <h5 class="card-title text-center">Estudiantes</h5>
+                            <h5 class="card-title text-center">Estudiante</h5>
                             <p class="card-text text-center">Tienen un descuento</p>
                             <p class="card-title text-center font-weight-bold">80%</p>
                             <p class="card-text text-center">
@@ -19,10 +19,10 @@ const comprarTicket = () => {
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-body border border-primary mr-1">
-                            <h5 class="card-title text-center">Estudiantes</h5>
+                        <div class="card-body border border-info mr-1 ">
+                            <h5 class="card-title text-center">Trainee</h5>
                             <p class="card-text text-center">Tienen un descuento</p>
-                            <p class="card-title text-center font-weight-bold">80%</p>
+                            <p class="card-title text-center font-weight-bold">50%</p>
                             <p class="card-text text-center">
                                 <small class="text-muted">
                                 * presentar documentación
@@ -31,10 +31,10 @@ const comprarTicket = () => {
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-body border border-primary mr-1">
-                            <h5 class="card-title text-center">Estudiantes</h5>
+                        <div class="card-body border border-warning mr-1">
+                            <h5 class="card-title text-center">Junior</h5>
                             <p class="card-text text-center">Tienen un descuento</p>
-                            <p class="card-title text-center font-weight-bold">80%</p>
+                            <p class="card-title text-center font-weight-bold">15%</p>
                             <p class="card-text text-center">
                                 <small class="text-muted">
                                 * presentar documentación
@@ -48,7 +48,7 @@ const comprarTicket = () => {
         <div class="row">
             <div class="col text-uppercase text-center">
                 <small>venta</small>
-                <h2>valor de ticket</h2>
+                <h2>valor de ticket $200</h2>
             </div>
         </div>
         <div class="row">

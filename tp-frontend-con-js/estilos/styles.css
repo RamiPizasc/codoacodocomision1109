@@ -2,6 +2,10 @@
   background-color: rgba(0, 0, 0, 0.781);
 }
 
+.bg-honolulu {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
 .nav-link {
   color: rgb(173, 173, 173);
 }
@@ -11,24 +15,9 @@
   color: white;
 }
 
-#logo {
-  max-height: 5rem;
-  padding-left: 1.5rem;
-}
-
-#tickets {
-  color: rgb(19, 200, 19);
-}
-
-#edificio {
-  object-fit: none;
-  width: 100%;
-  height: 57rem;
-}
-
 .card-img-overlay {
-  margin-right: 15%;
-  margin-top: 20rem;
+  margin-right: 14%;
+  margin-top: 19rem;
   text-align: right;
 }
 
@@ -45,8 +34,30 @@
   color: white;
 }
 
-.bg-honolulu {
-  background-color: rgba(0, 0, 0, 0.815);
+.footer {
+  background-color: rgb(18, 62, 98);
+  font-size: 0.9rem;
+}
+
+#logo {
+  max-height: 5rem;
+  padding-left: 1.5rem;
+}
+
+#tickets {
+  color: rgb(19, 200, 19);
+}
+
+#edificio,
+#cafe,
+#obelisco {
+  object-fit: none;
+  width: 100%;
+  height: 57rem;
+}
+
+#carusel-title,
+#carusel-text {
   color: white;
 }
 
@@ -67,9 +78,4 @@
 #btn-orador {
   background-color: rgb(133, 219, 76);
   color: white;
-}
-
-.footer {
-  background-color: rgb(18, 62, 98);
-  font-size: 0.9rem;
 }
