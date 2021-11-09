@@ -8,7 +8,7 @@ public class Departamento extends Personal {
         this.depto = depto;
 
        //super es la clase padre, es decir, Personal
-       //para hacer la copia, debemos estar debajo de la clase padre
+       //para hacer la copia de depto, debemos estar debajo de la clase padre
     }
     public String MostrarDatos(){
         return "\n Nombre: "+ nombre + "\n Apellido: " + apellido +
