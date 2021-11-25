@@ -17,7 +17,7 @@ public class Conexion {
         }
         return conexion;        
     }
-    public static void main (String args[]) throws SQLException{
+    /*public static void main (String args[]) throws SQLException{
         Connection c = null;
         Conexion con = new Conexion();
         c = con.getConexion();
@@ -42,5 +42,5 @@ public class Conexion {
                     + "\nEmail: " + email 
                     + "\nTelefono: " + telefono);
         }
-    }
+    }*/
 }
