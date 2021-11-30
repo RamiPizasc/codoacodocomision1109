@@ -33,7 +33,7 @@ public class Conexion {
             String nombres = rs.getString("nombres");
             String apellidos = rs.getString("apellidos");
             String email = rs.getString("email");
-            int telefono = rs.getInt("telefono");
+            String telefono = rs.getString("telefono");
             
             System.out.println(
                       "\nId: " + id 
