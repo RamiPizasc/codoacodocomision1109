@@ -53,7 +53,7 @@ const comprarTicket = () => {
         </div>
         <div class="row">
             <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 py-1">
-                <form action="index.html" method="POST">
+                <form action="index.html" method="POST" class="w-100">
                     <div class="form-row">
                         <div class="d-flex py-2">
                             <div class="form-group col-6 col-md-6 p-1">

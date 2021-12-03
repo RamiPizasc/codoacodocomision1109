@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Conf Bs As - Codo a Codo Pizá</title>
+    <title>Conferencia [CaC] Pizá Ramiro</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -38,7 +38,7 @@
               ></span>
               <!--agregamos borde y bg-warning y bg-ligth al toggler para que se destaque-->
             </button>
-            <a class="navbar-brand" href="#">
+            <a href="./index.html" class="navbar-brand">
               <img src="./img/codoacodo.png" alt="" id="logo" />
               Conf Bs As
             </a>
@@ -66,7 +66,7 @@
                 <a class="nav-link" href="#">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="tickets" onclick="comprarTicket()">Comprar tickets</a>
+                <a class="nav-link cursor" id="tickets" onclick="comprarTicket()">Comprar tickets</a>
               </li>
               <!--agregamos id a este nav-link para cambiar color de enlace-->
             </ul>
@@ -87,21 +87,21 @@
                   <img
                     src="./img/hawaii.jpg"
                     class="card-img opacity-50"
-                    id="edificio"
+                    id="img-edificio"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     src="./img/hawaii2.jpg"
                     class="card-img opacity-50"
-                    id="cafe"
+                    id="img-cafe"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     src="./img/hawaii3.jpg"
                     class="card-img opacity-50"
-                    id="obelisco"
+                    id="img-obelisco"
                   />
                 </div>
               </div>
@@ -216,7 +216,7 @@
           <div class="card my-5">
             <div class="row g-1">
               <div class="col-md-6">
-                <img src="./img/honolulu.jpg" id="honolulu" />
+                <img src="./img/honolulu.jpg" id="img-honolulu" />
               </div>
               <!--agregamos id para modificar max-height y width de la img-->
               <div class="col-md-6 bg-honolulu">
@@ -243,7 +243,7 @@
         </section>
 
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="text-center">
               <small class="text-uppercase">conviértete en un </small>
               <h1 class="text-uppercase">orador</h1>
@@ -254,45 +254,47 @@
               >
             </div>
 
-            <div class="row my-3">
-              <div class="col-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Nombre"
-                />
-              </div>
+            <form method="POST" id="form-enviar">
+              <div class="row my-3">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre"
+                  />
+                </div>
 
-              <div class="col-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput2"
-                  placeholder="Apellido"
-                />
-              </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput2"
+                    placeholder="Apellido"
+                  />
+                </div>
 
-              <div>
-                <textarea
-                  class="form-control mt-3"
-                  id="exampleFormControlTextarea1"
-                  rows="4"
-                  placeholder="Sobre qué quieres hablar?"
-                  aria-describedby="textHelpBlock"
-                ></textarea>
-                <small id="textHelpBlock" class="form-text text-muted">
-                  Recuerda incluir un título para tu charla
-                </small>
-              </div>
+                <div>
+                  <textarea
+                    class="form-control mt-3"
+                    id="exampleFormControlTextarea1"
+                    rows="4"
+                    placeholder="Sobre qué quieres hablar?"
+                    aria-describedby="textHelpBlock"
+                  ></textarea>
+                  <small id="textHelpBlock" class="form-text text-muted">
+                    Recuerda incluir un título para tu charla
+                  </small>
+                </div>
 
-              <div class="d-grid col-sm-12 my-3">
-                <button type="submit" class="btn btn-lg" id="btn-orador">
-                  Enviar
-                </button>
+                <div class="d-grid col-sm-12 my-3">
+                  <button type="button" class="btn btn-lg" id="btn-orador">
+                    Enviar
+                  </button>
+                </div>
               </div>
-            </div>
-            <!--agregamos id al botón para configurar desde CSS-->
+            </form>
+            <!--agregamos id al botón para configurar desde CSS, el tipo de botón es button-->
           </div>
         </div>
       </section>
@@ -302,33 +304,33 @@
     <footer>
       <div class="container-fluid pb-3 pt-4 justify-content-evenly footer">
         <!--agregamos la clase footer para adaptar color de fondo y tamaños de letra desde CSS -->
-        <div class="row text-center">
+        <div class="row text-center footer-anchors">
           <div class="col mx-4">
-            <a class="text-decoration-none" href="#"
+            <a href="#"
               >Preguntas <br />
               frecuentes</a
             >
           </div>
           <div class="col mt-2 mx-3">
-            <a class="text-decoration-none" href="#">Contáctanos</a>
+            <a href="#">Contáctanos</a>
           </div>
           <div class="col mt-2 mx-3">
-            <a class="text-decoration-none" href="#">Prensa</a>
+            <a href="#">Prensa</a>
           </div>
           <div class="col mt-2 mx-3">
-            <a class="text-decoration-none" href="#">Conferencias</a>
+            <a href="#">Conferencias</a>
           </div>
           <div class="col mx-3">
-            <a class="text-decoration-none" href="#"
+            <a href="#"
               >Términos y <br />
               condiciones</a
             >
           </div>
           <div class="col mt-2 mx-3">
-            <a class="text-decoration-none" href="#">Privacidad</a>
+            <a href="#">Privacidad</a>
           </div>
           <div class="col mt-2 mx-5">
-            <a class="text-decoration-none" href="#">Estudiantes</a>
+            <a href="#">Estudiantes</a>
           </div>
         </div>
       </div>
