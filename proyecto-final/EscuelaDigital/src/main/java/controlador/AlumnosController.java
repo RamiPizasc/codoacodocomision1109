@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.AlumnosDAO;
 
-
+//este es el servlet
 @WebServlet(name = "AlumnosController", urlPatterns = {"/AlumnosController"})
 public class AlumnosController extends HttpServlet {
 
@@ -23,6 +23,8 @@ public class AlumnosController extends HttpServlet {
         accion = request.getParameter("accion");
         if(accion == null || accion.isEmpty()){
             dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+        } else if(accion.equals("modificar")){
+            dispatcher = request.getRequestDispatcher("Vistas/modificar.jsp");
         }
         dispatcher.forward(request, response);
     }
