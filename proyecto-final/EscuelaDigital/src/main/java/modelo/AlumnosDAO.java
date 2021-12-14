@@ -52,9 +52,7 @@ public class AlumnosDAO {
         Alumnos alumno = null;
 
         try {
-            ps = conexion.prepareStatement("SELECT id, nombres, apellidos,"
-                    + "email,telefono FROM participantes "
-                    + "Where id = ?");
+            ps = conexion.prepareStatement("SELECT id, nombres, apellidos, email, telefono FROM participantes Where id = ?");
             ps.setInt(1, _id);
             //el primer valor que pasamos refiere al signo de interrogación del where id = ?
             rs = ps.executeQuery();
@@ -80,8 +78,7 @@ public class AlumnosDAO {
         PreparedStatement ps;
         try {
             ps = conexion.prepareStatement(
-                    "INSERT INTO participantes(nombres,apellidos"
-                    + "email, telefono)VALUES(?,?,?,?)");
+                    "INSERT INTO participantes(nombres,apellidos email, telefono)VALUES(?,?,?,?)");
             //cada número refiere a cada signo de interrogación
             ps.setString(1, alumno.getNombres());
             ps.setString(2, alumno.getApellidos());
