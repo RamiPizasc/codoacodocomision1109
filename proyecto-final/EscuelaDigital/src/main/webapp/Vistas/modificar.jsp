@@ -14,7 +14,7 @@
             String id = request.getParameter("id");
             int mid;
             mid = Integer.parseInt(id);
-            Alumnos resultado = null;
+            Alumnos resultado=null;
             AlumnosDAO alumnosDao = new AlumnosDAO();
             //en esta instancia de la clase nos conectamos con la base de datos
             resultado = alumnosDao.mostrarAlumno(mid);
@@ -23,7 +23,7 @@
         <h1 class="text-center">Modificar Registro</h1>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <form class="p-5 w-50" action="AlumnosController?acccion=insert" 
+                <form class="p-5 w-50" action="AlumnosController?accion=actualizar" 
                       method="POST">
                     <div class="mb-3"> 
                         <label for="id" class="form-label"></label>
