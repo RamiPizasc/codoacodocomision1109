@@ -58,7 +58,12 @@ public class AlumnosController extends HttpServlet {
             String usuario = request.getParameter("usuario");
             String clave = request.getParameter("password");
             boolean ingresa = alum.ingresarUsuario(usuario,clave);
-            //en el formulario de la vista nuevo usuario (que aún no se creó), el atributo name de cada input debería conicididr con los que figuran entre ""
+            if(ingresa){
+                dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+            }else{
+                dispatcher = request.getRequestDispatcher("index.jsp");
+            }
+           //en el formulario de la vista nuevo usuario (que aún no se creó), el atributo name de cada input debería conicididr con los que figuran entre ""
         }
         dispatcher.forward(request,response);
     }

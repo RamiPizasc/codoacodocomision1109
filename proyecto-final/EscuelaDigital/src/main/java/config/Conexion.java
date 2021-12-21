@@ -17,6 +17,30 @@ public class Conexion {
         }
         return conexion;        
     }
+    
+    /*public static void main (String args[]) throws SQLException{
+        Connection c = null;
+        Conexion con = new Conexion();
+        c = con.getConexion();
+        PreparedStatement ps;
+        ResultSet rs;
+        
+        ps = c.prepareStatement("SELECT * FROM usuarios");
+        rs = ps.executeQuery();
+        
+        while(rs.next()){
+            //mientras rs tenga más opciones
+            int id = rs.getInt("id");
+            String email = rs.getString("email");
+            String password = rs.getString("password");
+            
+            System.out.println(
+                      "\nId: " + id 
+                    + "\nNombre:  " + email
+                    + "\nApelllidos: " + password);
+        }
+    }*/
+    
     /*public static void main (String args[]) throws SQLException{
         Connection c = null;
         Conexion con = new Conexion();

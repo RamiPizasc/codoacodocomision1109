@@ -125,7 +125,7 @@ public class AlumnosDAO {
         PreparedStatement ps;
         ResultSet rs;
         try{
-            ps = conexion.prepareStatement("SELECT * FROM usuarios WHERE email=?");
+            ps = conexion.prepareStatement("SELECT email, password FROM usuarios WHERE email=?");
             ps.setString(1, usuario);//es 1, porque el parámetro es uno solo 
             rs = ps.executeQuery();
             //rs es un objeto que guarda los datos del usuario (en este caso el correo electrónico)
